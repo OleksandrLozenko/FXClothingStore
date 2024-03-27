@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vbHomeRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="727.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jptv22clothingstore.HomeController">
+   <children>
+      <MenuBar fx:id="mbEnter" style="-fx-background-color: darkgray;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Одежда">
+            <items>
+              <MenuItem fx:id="mbBooksAddnewcloth" mnemonicParsing="false" onAction="#clickMenuAddnewcloth" text="Добавить новую одежду" />
+                  <MenuItem fx:id="mbBookslistcloths" mnemonicParsing="false" onAction="#clickMenulistcloths" text="Список одежд" />
+                  <MenuItem fx:id="mbBookstablecloth" mnemonicParsing="false" onAction="#clickMenutablecloth" text="Таблица с одежд" />
+                  <MenuItem fx:id="mbBooksreturncloth" mnemonicParsing="false" onAction="#clickMenureturncloth" text="Возврат одежды" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Пользователи">
+            <items>
+              <MenuItem fx:id="mbAddNewUser" mnemonicParsing="false" onAction="#clickMenuAddNewUser" text="Новый пользователь" />
+                  <MenuItem fx:id="mbEditPrfile" mnemonicParsing="false" onAction="#clickMenuEditProfile" text="Профиль" />
+                  <MenuItem fx:id="mbLogin" mnemonicParsing="false" onAction="#clickMenuLogin" text="Войти" />
+                  <MenuItem fx:id="mbLogout" mnemonicParsing="false" onAction="#clickMenuLogout" text="Выйти" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#clickMenuLogin" text="Администратор">
+               <items>
+                  <MenuItem fx:id="mbAdminPane" mnemonicParsing="false" onAction="#clickMenuShowAdminpane" text="Панель администратора" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" onAction="#clickMenuLogin" text="Статистика">
+               <items>
+                  <MenuItem fx:id="mbTableUser" mnemonicParsing="false" onAction="#clickMenuTableUser" text="Рейтинг покупателей" />
+                  <MenuItem fx:id="mbAdminPane11" mnemonicParsing="false" onAction="#clickMenuTableCloth" text="Рейтинг товаров" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="lbInfoUser" alignment="CENTER" layoutX="10.0" layoutY="35.0" prefHeight="17.0" prefWidth="745.0" style="-fx-background-color: lightgray;" styleClass="info-user" stylesheets="@home.css" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbInfoHome" alignment="CENTER" prefHeight="17.0" prefWidth="745.0" style="-fx-background-color: lightgray;" textFill="#60ab2d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox fx:id="vbHomeContent" prefHeight="374.0" prefWidth="600.0" style="-fx-background-color: lightgray;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="58.0" prefWidth="727.0" style="-fx-background-color: lightgray; -fx-max-height: 400; -fx-border-color: black; -fx-border-radius: 15px;" text="Магазин одежды &quot;ОЛЕЖА&quot;" textFill="#3d2723" wrapText="true">
+               <font>
+                  <Font name="Century Schoolbook" size="24.0" />
+               </font>
+            </Label>
+            <Label style="-fx-background-color: lightgray; -fx-border-radius: 15px; -fx-border-color: black;" text="Oleksandr Lozenko">
+               <font>
+                  <Font name="Century Schoolbook" size="24.0" />
+               </font>
+            </Label>
+         </children></VBox>
+   </children>
+</VBox>
