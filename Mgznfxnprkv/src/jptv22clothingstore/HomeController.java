@@ -181,7 +181,7 @@ public class HomeController implements Initializable {
         lbInfoHome.setText("");
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/cloth/listcloths/listcloth.fxml"));
+            loader.setLocation(getClass().getResource("/cloth/listcloth/listcloth.fxml"));
             HBox hblistclothsRoot = loader.load();
             ListclothController ListclothController = loader.getController();
             app.getPrimaryStage().setTitle("JPTV22ClothingStore-список одежд");
